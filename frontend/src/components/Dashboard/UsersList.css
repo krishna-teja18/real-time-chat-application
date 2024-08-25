@@ -1,0 +1,164 @@
+.users-list-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-image: url('D:/Zentra Tech/frontend/public/images/users background.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+  transition: box-shadow 0.3s ease;
+}
+
+.users-list-container:hover {
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.users-list-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #FF8343;
+}
+
+.view-requests-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #FF8343;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.view-requests-link:hover {
+  text-decoration: underline;
+}
+
+.users-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(42, 42, 42, 0.85);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+  background-color: rgba(68, 68, 68, 0.85);
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.interaction-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.message-textarea {
+  width: 85%;
+  padding: 0.8rem;
+  background-color: #2e2e2e;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  color: #f0f0f0;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.message-textarea:focus {
+  border-color: #777777;
+  outline: none;
+}
+
+.send-button, .cancel-button, .select-user-button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.send-button {
+  background-color: #61dafb;
+  color: #1a1a1a;
+}
+
+.send-button:hover {
+  background-color: #5ec5e5;
+}
+
+.cancel-button {
+  background-color: #ff4c4c;
+  color: #ffffff;
+}
+
+.cancel-button:hover {
+  background-color: #e64545;
+}
+
+.select-user-button {
+  background-color: #1679AB;
+  color: #ffffff;
+}
+
+.select-user-button:hover {
+  background-color: #102C57;
+}
+
+.status-text {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+.chat-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.chat-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .users-list-container {
+      padding: 1.5rem;
+      margin: 2rem auto;
+  }
+
+  .user-item {
+      padding: 0.8rem;
+  }
+
+  .user-name {
+      font-size: 1rem;
+  }
+
+  .send-button, .cancel-button, .select-user-button {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+  }
+
+  .message-textarea {
+      padding: 0.7rem;
+      font-size: 0.9rem;
+  }
+}

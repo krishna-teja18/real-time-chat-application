@@ -1,0 +1,130 @@
+.chat-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+}
+
+.chat-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.sent {
+  /* background-color: #3795BD; */
+  color: #821131;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.received {
+  /* background-color: #444444; */
+  color: #BC5A94;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.sender {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.send-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+}
+
+.send-message input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  margin-right: 0.5rem;
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.send-message input::placeholder {
+  color: #bbbbbb;
+}
+
+.send-message button {
+  padding: 0.8rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-message button:hover {
+  background-color: #21a1f1;
+}
+
+.dashboard-link {
+  display: block;
+  margin-top: 2rem;
+  color: #61dafb;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dashboard-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .chat-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .messages {
+    max-height: 300px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+
+  .send-message input {
+    padding: 0.7rem;
+  }
+
+  .send-message button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
